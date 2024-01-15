@@ -7,6 +7,6 @@ class Solution:
                 if matrix[i][j]=='1':
                     mem[i+1][j+1]=min(mem[i+1][j],mem[i][j+1],mem[i][j])+1
                     a=max(a,mem[i+1][j+1])
-        print(mem)
+        
         return a*a
         
