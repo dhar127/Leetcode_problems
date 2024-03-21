@@ -18,5 +18,6 @@ class Solution {
             temp=front;
         }
         return prev;
+    
     }
 }
