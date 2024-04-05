@@ -8,5 +8,4 @@ class Solution:
             elif char in brackets.values():
                 if not stack or char != brackets[stack.pop()]:
                     return False
-        print(stack)
         return len(stack) == 0
