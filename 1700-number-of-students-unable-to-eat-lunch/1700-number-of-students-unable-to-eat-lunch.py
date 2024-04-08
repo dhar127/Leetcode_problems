@@ -1,0 +1,3 @@
+class Solution:
+    def countStudents(self, s: List[int], san: List[int]) -> int:
+        return 0 if len(san)==len(s) and san.count(1)==s.count(1) else abs(san.count(1)-s.count(1))+san[[i for i, v in enumerate(san) if v == 0][s.count(0)]:].count(1) if s.count(0)<san.count(0) else abs(san.count(0)-s.count(0))+san[[i for i, v in enumerate(san) if v == 1][s.count(1)]:].count(0) if s.count(1)<san.count(1) else -1
